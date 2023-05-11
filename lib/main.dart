@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_driver/driver_extension.dart';
 
-void main() => runApp(MyApp());
+Future<void> main() async {
+  enableFlutterDriverExtension();
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
